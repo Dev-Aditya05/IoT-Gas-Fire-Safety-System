@@ -128,7 +128,7 @@ while True:
         danger_status_changed = (alert_code != last_alert_state)
         
         if time_is_up or danger_status_changed:
-            print(f"Status: Gas={gas_pct:.1f}% Fire={is_fire_present}...", end="")
+            print(f"Status: Gas={gas_pct:.1f}% Fire={is_fire_present} Temp={temp_c:.1f}C ...", end="")
             send_to_thingspeak(gas_pct, is_fire_present, alert_code, temp_c)
             
             last_upload_time = current_time 
@@ -141,3 +141,4 @@ while True:
     except Exception as e:
         print("❌ Error:", e)
         time.sleep(1)
+
