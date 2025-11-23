@@ -2,7 +2,6 @@
 
 **Author:** Aditya Kamath & Adithya Y Saliyan  
 
-
 **Device:** Raspberry Pi Pico W  
 **Language:** MicroPython  
 **Status:** Completed ✅
