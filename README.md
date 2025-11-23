@@ -457,13 +457,42 @@ while True:
     except Exception as e:
         print("❌ Error:", e)
         time.sleep(1)
+---
+
 ## VII. IoT Dashboard Analytics & Data
-The system uploads data to ThingSpeak Channel ID: 3172254. The dashboard visualizes the following parameters in real-time:
 
-Field 1 (Gas Level): Percentage of combustible gas in the air.
+The system utilizes **ThingSpeak** for real-time data visualization and historical logging. The dashboard provides a comprehensive view of the environmental conditions and system status.
 
-Field 2 (Fire Detection): Binary graph (0 = Safe, 1 = Fire).
+**Channel ID:** `3172254`  
+**Update Interval:** Every 16 seconds (or instantly upon Danger detection)
 
-Field 3 (System Status): Trigger field used to activate Telegram Alerts.
+### Dashboard Fields Description
 
-Field 4 (Temperature): Real-time heat monitoring in °C.
+The data is mapped to the following ThingSpeak fields:
+
+* **Field 1: Gas Concentration (%)**
+    * *Sensor:* MQ-2 Gas Sensor
+    * *Description:* Displays the real-time percentage of combustible gas in the air.
+    * *Threshold:* Values above **60%** indicate a leak.
+
+* **Field 2: Fire Detection Status**
+    * *Sensor:* IR Flame Sensor
+    * *Description:* Binary visualization of fire presence.
+    * *Values:* `0` = Safe, `1` = Fire Detected.
+
+* **Field 3: System Alert Trigger**
+    * *Logic:* Combined logic of Gas, Fire, and Temperature.
+    * *Description:* This field acts as the trigger for the **Telegram Bot**.
+    * *Values:* `1` = Danger (Triggers Message), `0` = Safe.
+
+* **Field 4: Temperature (°C)**
+    * *Sensor:* DHT22 (or DHT11)
+    * *Description:* Monitors ambient room temperature to detect heat spikes caused by fire.
+    * *Threshold:* Values above **50°C** contribute to the alarm trigger.
+
+### Live Dashboard Preview
+
+Below is a snapshot of the analytics dashboard showing a simulated fire event:
+
+![IoT Dashboard](dashboard.png)
+*(Note: Please upload a screenshot of your actual ThingSpeak graphs to the repository and name it `dashboard.png` for this image to appear)*
