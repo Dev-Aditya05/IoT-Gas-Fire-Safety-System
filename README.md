@@ -272,3 +272,12 @@ Below is a snapshot of the analytics dashboard showing a simulated fire event:
 
 ![IoT Dashboard](dashboard.png)
 *(Note: Please upload a screenshot of your actual ThingSpeak graphs to the repository and name it `dashboard.png` for this image to appear)*
+
+---
+
+## VIII. Video of the Demo
+
+A complete demonstration of the project, including Gas detection, Pump activation, and Telegram notification, can be viewed here:
+
+**[Link to Video Demo]** *(Upload your video to YouTube or Google Drive and paste the link here, e.g., [https://youtu.be/your_video_link](https://youtu.be/your_video_link))*
+How to fix the "Merged" look:
