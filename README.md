@@ -37,6 +37,7 @@ Domestic and industrial fires often originate from undetected gas leakages (LPG/
 | **Water Pump**| Relay IN | **GP18** (Pin 24) | Active Fire Suppression |
 | **Buzzer** | (+) Positive | **GP15** (Pin 20) | Audio Alarm |
 | **Red LED** | Anode | **GP14** (Pin 19) | Danger Indicator |
+| **Green LED** | Anode | **GP13** (Pin 17) | Safety Indicator |
 
 ## V. Key Features
 1.  **Smart Logic:** The alarm triggers if Gas > 60% OR Temp > 50°C OR Fire is detected.
