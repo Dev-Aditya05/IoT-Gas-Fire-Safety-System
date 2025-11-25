@@ -1,6 +1,6 @@
 # IoT-Enabled Gas Leak & Fire Detection System 🚒💧
 
-**Author:** Aditya Kamath & Adithya Y Saliyan  
+**Author:** Aditya Kamath , Adithya Y Saliyan & Adyaan Mallik C  
 **Device:** Raspberry Pi Pico W  
 **Language:** MicroPython  
 **Status:** Completed ✅
