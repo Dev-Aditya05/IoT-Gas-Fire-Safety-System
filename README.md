@@ -46,7 +46,7 @@ The system connects sensors and actuators to the Raspberry Pi Pico W using the f
 
 > **⚠️ Safety Note:** The Water Pump and MQ-2 heater require an external 5V power source or connection to the VBUS (Pin 40). Do not power the pump directly from a GPIO pin.
 
-![Circuit Diagram](Circuit Schematic.png)
+![Circuit Diagram](CircuitSchematic.png)
 
 ---
 
