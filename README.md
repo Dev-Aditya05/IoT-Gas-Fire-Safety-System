@@ -270,8 +270,7 @@ The data is mapped to the following ThingSpeak fields:
 
 Below is a snapshot of the analytics dashboard showing a simulated fire event:
 
-![IoT Dashboard](dashboard.png)
-*(Note: Please upload a screenshot of your actual ThingSpeak graphs to the repository and name it `dashboard.png` for this image to appear)*
+![IoT Dashboard](ThingSpeak.png)
 
 ---
 
